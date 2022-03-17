@@ -1,5 +1,5 @@
 PORTNAME=	clvm_rs
-PORTVERSION=	0.1.15
+PORTVERSION=	0.1.19
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -33,6 +33,7 @@ CARGO_CRATES=	bls12_381-0.5.0 \
 		num-integer-0.1.44 \
 		num-traits-0.2.14 \
 		autocfg-1.0.1 \
+		cfg-if-0.1.10 \
 		cfg-if-1.0.0 \
 		ctor-0.1.20 \
 		indoc-0.3.6 \
@@ -44,6 +45,7 @@ CARGO_CRATES=	bls12_381-0.5.0 \
 		unindent-0.1.7 \
 		bitflags-1.2.1 \
 		openssl-sys-0.9.64 \
+		openssl-src-111.15.0+1.1.1k \
 		foreign-types-0.3.2 \
 		once_cell-1.7.2 \
 		block-buffer-0.9.0 \
@@ -93,11 +95,12 @@ CARGO_CRATES=	bls12_381-0.5.0 \
 		wasm-bindgen-shared-0.2.75 \
 		wasm-bindgen-test-0.3.25 \
 		wasm-bindgen-test-macro-0.3.25 \
-		wasm-bindgen-futures-0.4.26 \
+		wasm-bindgen-futures-0.4.25 \
 		bumpalo-3.7.0 \
 		log-0.4.14 \
 		console_error_panic_hook-0.1.6 \
-		js-sys-0.3.53 \
+		web-sys-0.3.52 \
+		js-sys-0.3.52 \
 		scoped-tls-1.0.0
 
 CARGO_BUILD=	no
