@@ -1,5 +1,5 @@
 PORTNAME=	clvm_rs
-PORTVERSION=	0.1.19
+PORTVERSION=	0.1.20
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -19,89 +19,85 @@ GH_ACCOUNT=	Chia-Network
 
 USE_PYTHON=	autoplist concurrent distutils
 
-CARGO_CRATES=	bls12_381-0.5.0 \
-		hex-0.4.3 \
-		lazy_static-1.4.0 \
-		num-bigint-0.4.0 \
-		pyo3-0.14.2 \
-		openssl-0.10.35 \
-		ff-0.10.0 \
-		group-0.10.0 \
-		pairing-0.20.0 \
-		rand_core-0.6.2 \
-		subtle-2.4.0 \
-		num-integer-0.1.44 \
-		num-traits-0.2.14 \
+CARGO_CRATES=	arbitrary-1.0.3 \
 		autocfg-1.0.1 \
+		bitflags-1.3.1 \
+		bitvec-0.22.3 \
+		block-buffer-0.9.0 \
+		bls12_381-0.5.0 \
+		bumpalo-3.7.0 \
+		byteorder-1.4.3 \
+		cc-1.0.69 \
 		cfg-if-0.1.10 \
 		cfg-if-1.0.0 \
-		ctor-0.1.20 \
-		indoc-0.3.6 \
-		inventory-0.1.10 \
-		libc-0.2.95 \
-		parking_lot-0.11.1 \
-		paste-0.1.18 \
-		pyo3-macros-0.14.2 \
-		unindent-0.1.7 \
-		bitflags-1.2.1 \
-		openssl-sys-0.9.64 \
-		openssl-src-111.15.0+1.1.1k \
-		foreign-types-0.3.2 \
-		once_cell-1.7.2 \
-		block-buffer-0.9.0 \
+		console_error_panic_hook-0.1.6 \
+		cpufeatures-0.1.5 \
 		digest-0.9.0 \
-		fake-simd-0.1.2 \
-		opaque-debug-0.3.0 \
-		bitvec-0.22.0 \
-		byteorder-1.4.3 \
-		quote-1.0.9 \
-		syn-1.0.72 \
-		indoc-impl-0.3.6 \
-		proc-macro-hack-0.5.19 \
-		ghost-0.1.2 \
-		inventory-impl-0.1.10 \
-		instant-0.1.9 \
-		lock_api-0.4.4 \
-		parking_lot_core-0.8.3 \
-		paste-impl-0.1.18 \
-		pyo3-macros-backend-0.14.2 \
-		pyo3-build-config-0.14.2 \
-		cc-1.0.68 \
-		pkg-config-0.3.19 \
-		vcpkg-0.2.13 \
-		foreign-types-shared-0.1.0 \
-		block-padding-0.1.0 \
-		byte-tools-0.3.1 \
-		generic-array-0.14.0 \
+		ff-0.10.1 \
+		foreign-types-0.3.2 \
+		foreign-types-shared-0.1.1 \
 		funty-1.2.0 \
+		generic-array-0.14.4 \
+		group-0.10.0 \
+		hex-0.4.3 \
+		indoc-0.3.6 \
+		indoc-impl-0.3.6 \
+		instant-0.1.10 \
+		js-sys-0.3.52 \
+		lazy_static-1.4.0 \
+		libc-0.2.99 \
+		libfuzzer-sys-0.4.2 \
+		lock_api-0.4.4 \
+		log-0.4.14 \
+		num-bigint-0.4.0 \
+		num-integer-0.1.44 \
+		num-traits-0.2.14 \
+		once_cell-1.8.0 \
+		opaque-debug-0.3.0 \
+		openssl-0.10.35 \
+		openssl-src-111.15.0+1.1.1k \
+		openssl-sys-0.9.65 \
+		pairing-0.20.0 \
+		parking_lot-0.11.1 \
+		parking_lot_core-0.8.3 \
+		paste-0.1.18 \
+		paste-impl-0.1.18 \
+		pkg-config-0.3.19 \
+		proc-macro-hack-0.5.19 \
+		proc-macro2-1.0.28 \
+		pyo3-0.15.1 \
+		pyo3-build-config-0.15.1 \
+		pyo3-macros-0.15.1 \
+		pyo3-macros-backend-0.15.1 \
+		quote-1.0.9 \
 		radium-0.6.2 \
-		tap-1.0.1 \
-		wyz-0.4.0 \
-		proc-macro2-1.0.27 \
-		unicode-xid-0.2.2 \
+		rand_core-0.6.3 \
+		redox_syscall-0.2.10 \
+		scoped-tls-1.0.0 \
 		scopeguard-1.1.0 \
-		smallvec-1.6.1 \
-		redox_syscall-0.2.8 \
-		typenum-1.13.0 \
-		winapi-i686-pc-windows-gnu-0.4.0 \
-		winapi-x86_64-pc-windows-gnu-0.4.0 \
-		winapi-0.3.9 \
 		sha2-0.9.5 \
-		cpufeatures-0.1.1 \
+		smallvec-1.6.1 \
+		subtle-2.4.1 \
+		syn-1.0.74 \
+		tap-1.0.1 \
+		typenum-1.13.0 \
+		unicode-xid-0.2.2 \
+		unindent-0.1.7 \
+		vcpkg-0.2.15 \
+		version_check-0.9.3 \
 		wasm-bindgen-0.2.75 \
-		wasm-bindgen-macro-support-0.2.75 \
 		wasm-bindgen-backend-0.2.75 \
+		wasm-bindgen-futures-0.4.25 \
 		wasm-bindgen-macro-0.2.75 \
+		wasm-bindgen-macro-support-0.2.75 \
 		wasm-bindgen-shared-0.2.75 \
 		wasm-bindgen-test-0.3.25 \
 		wasm-bindgen-test-macro-0.3.25 \
-		wasm-bindgen-futures-0.4.25 \
-		bumpalo-3.7.0 \
-		log-0.4.14 \
-		console_error_panic_hook-0.1.6 \
 		web-sys-0.3.52 \
-		js-sys-0.3.52 \
-		scoped-tls-1.0.0
+		winapi-0.3.9 \
+		winapi-i686-pc-windows-gnu-0.4.0 \
+		winapi-x86_64-pc-windows-gnu-0.4.0 \
+		wyz-0.4.0
 
 CARGO_BUILD=	no
 CARGO_INSTALL=	no
