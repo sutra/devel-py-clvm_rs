@@ -1,5 +1,5 @@
 PORTNAME=	clvm_rs
-PORTVERSION=	0.1.20
+PORTVERSION=	0.1.21
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -19,8 +19,7 @@ GH_ACCOUNT=	Chia-Network
 
 USE_PYTHON=	autoplist concurrent distutils
 
-CARGO_CRATES=	arbitrary-1.0.3 \
-		autocfg-1.0.1 \
+CARGO_CRATES=	autocfg-1.0.1 \
 		bitflags-1.3.1 \
 		bitvec-0.22.3 \
 		block-buffer-0.9.0 \
@@ -46,7 +45,6 @@ CARGO_CRATES=	arbitrary-1.0.3 \
 		js-sys-0.3.52 \
 		lazy_static-1.4.0 \
 		libc-0.2.99 \
-		libfuzzer-sys-0.4.2 \
 		lock_api-0.4.4 \
 		log-0.4.14 \
 		num-bigint-0.4.0 \
