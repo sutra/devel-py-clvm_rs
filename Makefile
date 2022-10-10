@@ -80,8 +80,8 @@ do-build:
 
 # Stage the .so library.
 do-install:
-	${STRIP_CMD} ${WRKSRC}/target/release/libclvmr.so
-	${INSTALL_DATA} ${WRKSRC}/target/release/libclvmr.so ${STAGEDIR}${PREFIX}/lib
+	${STRIP_CMD} ${WRKSRC}/target/release/lib${PORTNAME}.so
+	${INSTALL_DATA} ${WRKSRC}/target/release/lib${PORTNAME}.so ${STAGEDIR}${PREFIX}/lib
 # TODO Portlint concerned about possible direct use of install, but we need
 #	to extract the whl into staging. Requires pip.
 	${SETENV} ${MAKE_ENV} pip install --isolated --root=${STAGEDIR} \

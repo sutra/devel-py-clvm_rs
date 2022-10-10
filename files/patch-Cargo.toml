@@ -1,10 +1,12 @@
---- Cargo.toml.orig	2022-10-10 16:58:47 UTC
+--- Cargo.toml.orig	2022-06-21 23:28:24 UTC
 +++ Cargo.toml
-@@ -11,7 +11,7 @@ readme = "README.md"
+@@ -13,8 +13,8 @@ repository = "https://github.com/Chia-Network/clvm_rs/
+ readme = "README.md"
  
  [lib]
- name = "clvmr"
+-name = "clvmr"
 -crate-type = ["rlib"]
++name = "clvm_rs"
 +crate-type = ["rlib", "cdylib"]
  
  [profile.release]
